@@ -1,4 +1,4 @@
-#!/bin/bash -e
+#*/bin/bash -e
 
 # we want wheel support when possible
 pip install "pip>=8.1"
@@ -37,3 +37,4 @@ fi
 if [[ ${DJANGO_BITS[0]} -eq 1 && ${DJANGO_BITS[1]} -lt 10 && ${DJANGO_BITS[1]} -gt 7 ]]; then
     pip install "django-tastypie==0.13.3"
 fi
+ 
